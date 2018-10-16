@@ -1,0 +1,31 @@
+{
+  "name": "mithril-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack src/index.js --output bin/app.js -d --watch",
+    "build": "webpack -p",
+    "heroku-postbuild": "webpack -p",
+    "bundle": "bundle src/index.js --output app.js --watch",
+    "budo": "budo --live --open index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^1.1.6",
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "webpack": "^4.20.0",
+    "webpack-cli": "^3.1.1"
+  }
+}
